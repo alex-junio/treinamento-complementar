@@ -19,9 +19,13 @@ public class Exercicio2 {
 		System.out.println("Quanto pretende pagar por mês?");
 		prestacao = teclado.nextDouble();
 		teclado.close();
-		if (prestacao <= salario * 0.3) {
+		double limite = salario * 0.3;
+		if (prestacao <= limite) {
 			System.out.println("O impréstimo pode ser concedido.");
 		} else {
-		System.out.println("O impréstimo não pode ser concedido nessas condições. O valor mácimo da prestação deve ser " + 0.3*salario);}
+			System.out.println(
+					"O impréstimo não pode ser concedido nessas condições. O valor mácimo da prestação deve ser "
+							+ limite);
+		}
 	}
 }
