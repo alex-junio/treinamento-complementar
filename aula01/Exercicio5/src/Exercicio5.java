@@ -23,5 +23,4 @@ public class Exercicio5 {
 		System.out.println("A soma dos números digitados é: " + soma);
 		teclado.close();
 	}
-
 }
