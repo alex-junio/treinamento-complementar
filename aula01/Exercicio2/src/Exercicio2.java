@@ -12,13 +12,12 @@ public class Exercicio2 {
 		System.out.println(
 				"Para checar a possibilidade, você deve informar o seu salário bruto e o valor que pretende pagar por mês");
 		System.out.println("O valor da parcela mensal não pode ultrapassar 30% (trinta por cento) do salário bruto");
-		double salario, prestacao;
 		Scanner teclado = new Scanner(System.in);
+		double salario, prestacao;
 		System.out.println("Qual seu salário?");
 		salario = teclado.nextDouble();
 		System.out.println("Quanto pretende pagar por mês?");
 		prestacao = teclado.nextDouble();
-		teclado.close();
 		double limite = salario * 0.3;
 		if (prestacao <= limite) {
 			System.out.println("O impréstimo pode ser concedido.");
@@ -27,5 +26,6 @@ public class Exercicio2 {
 					"O impréstimo não pode ser concedido nessas condições. O valor mácimo da prestação deve ser "
 							+ limite);
 		}
+		teclado.close();
 	}
 }
