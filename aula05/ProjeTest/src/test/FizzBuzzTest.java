@@ -1,15 +1,19 @@
 package test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
+
+import main.FizzBuzz;
 
 public class FizzBuzzTest {
 	@Test
 	public void deveRetornarFizzQuandoForMultiploDeTres() {
 		FizzBuzz f = new FizzBuzz();
 
-	public String retorno = f.calcular();
+	String retorno = f.calcular(3);
 
-	assertEquals(3, retorno);
+	assertEquals("fizz", retorno);
 		}
 
 }
