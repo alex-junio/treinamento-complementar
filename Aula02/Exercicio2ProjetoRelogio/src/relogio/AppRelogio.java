@@ -18,5 +18,6 @@ public class AppRelogio {
 		relogio1.setMinuto(minuto);
 		relogio1.setSegundo(segundo);
 		System.out.println(relogio1.getHoraAtual());
+		teclado.close();
 	}
 }

@@ -1,7 +1,7 @@
 package relogio;
 
 public class Relogio {
-	private int hora, minuto, segundo;
+	private int hora = 00, minuto, segundo;
 
 	public Relogio(int hora, int minuto, int segundo) {
 		setHora(hora);
