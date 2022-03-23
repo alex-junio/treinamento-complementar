@@ -1,3 +1,4 @@
+package projetoveiculo;
 
 public class Veiculo {
 	private String marca, modelo;

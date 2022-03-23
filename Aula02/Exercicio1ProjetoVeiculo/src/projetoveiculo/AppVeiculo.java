@@ -1,3 +1,4 @@
+package projetoveiculo;
 import java.util.Scanner;
 
 public class AppVeiculo {
